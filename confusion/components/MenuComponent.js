@@ -6,7 +6,7 @@ const Menu = (props) => {
     
     const renderMenuItem = ({item, index}) => {
         return (
-            <ListItem key={index}>
+            <ListItem key={index} onPress={() => props.onPress(item.id)}>
                 <Avatar source={require('./images/uthappizza.png')}></Avatar>
                 <ListItem.Content>
                     <ListItem.Title>{item.name}</ListItem.Title>
