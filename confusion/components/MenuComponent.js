@@ -21,7 +21,7 @@ const Menu = (props) => {
                 </ListItem.Content>
             </ListItem>
         );
-    }
+    };
 
     return (
         <FlatList
